@@ -3,14 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeightSmall"
     android:orientation="horizontal"
-    android:padding="6dip">
+    android:padding="6dip"
+    android:background="@color/material_blue_grey_80">
 
     <TextView
         android:id="@+id/LIST_MACHINE_ID"
         android:layout_width="fill_parent"
         android:layout_height="26dip"
         android:singleLine="true"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
 
     <ImageView
         android:id="@+id/LIST_MACHINE_PHOTO"
@@ -30,6 +32,7 @@
         android:layout_weight="10"
         android:gravity="center_vertical"
         android:text="Example application"
+        android:textColor="@android:color/white"
         android:textSize="16sp" />
 
 </LinearLayout>

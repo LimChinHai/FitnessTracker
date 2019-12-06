@@ -31,7 +31,7 @@ public class AboutFragment extends Fragment {
         String copyright = null;
         License license = null;
 
-        switch (v.getId()) {
+        /*switch (v.getId()) {
             case R.id.MPAndroidChart:
                 name = "MPAndroidChart";
                 url = "https://github.com/PhilJay/MPAndroidChart";
@@ -116,13 +116,13 @@ public class AboutFragment extends Fragment {
                 copyright = "Copyright 2015 Ivan Baranov";
                 license = new ApacheSoftwareLicense20();
                 break;
-        }
+        }*/
 
         final Notice notice = new Notice(name, url, copyright, license);
-        new LicensesDialog.Builder(getMainActivity())
-            .setNotices(notice)
-            .build()
-            .show();
+        //new LicensesDialog.Builder(getMainActivity())
+            //.setNotices(notice)
+            //.build()
+            //.show();
     };
 
     /**
@@ -147,7 +147,7 @@ public class AboutFragment extends Fragment {
         this.mActivity = (MainActivity) activity;
     }
 
-    @Override
+    /*@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -156,10 +156,10 @@ public class AboutFragment extends Fragment {
         //TextView pAppVersion = view.findViewById(R.id.app_version_textview);
         //pAppVersion.setText(); TODO get code version from Manifest
 
-        TextView mpDBVersionTextView = view.findViewById(R.id.database_version);
-        mpDBVersionTextView.setText(Integer.toString(DatabaseHelper.DATABASE_VERSION));
+        //TextView mpDBVersionTextView = view.findViewById(R.id.database_version);
+        //mpDBVersionTextView.setText(Integer.toString(DatabaseHelper.DATABASE_VERSION));
 
-        TextView mpMPAndroidChartTextView = view.findViewById(R.id.MPAndroidChart);
+       /* TextView mpMPAndroidChartTextView = view.findViewById(R.id.MPAndroidChart);
         TextView mpJavaCVSTextView = view.findViewById(R.id.javaCSV);
         TextView mpLicenseDialogTextView = view.findViewById(R.id.LicensesDialog);
         TextView mpChronometerTextView = view.findViewById(R.id.antoniomChronometer);
@@ -197,7 +197,7 @@ public class AboutFragment extends Fragment {
 
     public MainActivity getMainActivity() {
         return this.mActivity;
-    }
+    }*/
 
 }
 

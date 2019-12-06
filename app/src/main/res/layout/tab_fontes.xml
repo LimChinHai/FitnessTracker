@@ -5,7 +5,7 @@
     android:name="tab_fontes"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#EEEEEE"
+    android:background="@color/material_blue_grey_80"
     android:fillViewport="true">
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:animateLayoutChanges="true"
-        android:background="#EEEEEE"
+        android:background="@color/material_blue_grey_80"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:gravity="top"
@@ -34,7 +34,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="2dp">
+                android:padding="2dp"
+                android:background="@color/material_blue_grey_80">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -64,6 +65,8 @@
                         android:layout_toStartOf="@+id/buttonListMachine"
                         android:layout_toEndOf="@+id/imageMachine"
                         android:hint="@string/MachineHint"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
                         android:imeOptions="actionNext"
                         android:inputType="text|textCapWords|textAutoComplete|textNoSuggestions|textVisiblePassword"
                         android:singleLine="true" />
@@ -75,7 +78,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:adjustViewBounds="true"
-                        android:background="@android:color/transparent"
+                        android:background="@android:color/white"
                         android:baselineAlignBottom="false"
                         android:cropToPadding="false"
                         android:src="@drawable/list" />
@@ -102,7 +105,8 @@
                 android:layout_marginStart="5dp"
                 android:layout_weight="0"
                 android:gravity="center"
-                android:text="@string/exercise_type" />
+                android:text="@string/exercise_type"
+                android:textColor="@android:color/white"/>
 
             <androidx.cardview.widget.CardView
                 style="@style/CardViewStyle"
@@ -115,7 +119,7 @@
                     android:id="@+id/bodyBuildingSelection"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/background_odd"
+                    android:background="@color/orange"
                     android:gravity="center"
                     android:text="@string/FonteLabel"
                     app:autoSizeMaxTextSize="14sp"
@@ -187,7 +191,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/SerieLabel" />
+                        android:text="@string/SerieLabel"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editSerie"
@@ -220,7 +225,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/RepetitionLabel_short" />
+                        android:text="@string/RepetitionLabel_short"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editRepetition"
@@ -231,6 +237,7 @@
                         android:inputType="number"
                         android:minEms="2"
                         tools:text="10"
+                        android:textColor="@android:color/white"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -254,7 +261,8 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Seconds" />
+                        android:text="Seconds"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editSeconds"
@@ -265,7 +273,8 @@
                         android:inputType="number"
                         android:minEms="2"
                         tools:text="10"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -281,7 +290,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border"
+                    android:background="@color/material_blue_grey_80"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
 
@@ -289,7 +298,8 @@
                         android:id="@+id/poidsLabel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/PoidsLabel" />
+                        android:text="@string/PoidsLabel"
+                        android:textColor="@android:color/white"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -304,7 +314,8 @@
                             android:gravity="center"
                             android:inputType="numberDecimal|numberSigned"
                             android:minEms="3"
-                            tools:text="10" />
+                            tools:text="10"
+                            android:textColor="@android:color/white"/>
 
                         <Spinner
                             android:id="@+id/spinnerUnit"
@@ -330,14 +341,16 @@
                             android:gravity="center"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
-                            android:text="@string/min" />
+                            android:text="@string/min"
+                            android:textColor="@android:color/white"/>
 
                         <TextView
                             android:id="@+id/minText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            tools:text="40 kg" />
+                            tools:text="40 kg"
+                            android:textColor="@android:color/white"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -345,14 +358,16 @@
                             android:gravity="center"
                             android:paddingStart="20dp"
                             android:paddingEnd="5dp"
-                            android:text="@string/max" />
+                            android:text="@string/max"
+                            android:textColor="@android:color/white"/>
 
                         <TextView
                             android:id="@+id/maxText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            tools:text="80 kg" />
+                            tools:text="80 kg"
+                            android:textColor="@android:color/white"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -368,21 +383,24 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/material_blue_grey_80">
 
                     <TextView
                         android:id="@+id/textDistance"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/DistanceLabel" />
+                        android:text="@string/DistanceLabel"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editDistance"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:inputType="numberDecimal" />
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/white"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -398,14 +416,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/material_blue_grey_80">
 
                     <TextView
                         android:id="@+id/textDuration"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/DurationLabel" />
+                        android:text="@string/DurationLabel"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editDuration"
@@ -413,7 +433,8 @@
                         android:layout_height="wrap_content"
                         android:ems="5"
                         android:gravity="center"
-                        android:inputType="time">
+                        android:inputType="time"
+                        android:textColor="@android:color/white">
 
                     </EditText>
                 </LinearLayout>
@@ -445,7 +466,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_80">
 
                 <ImageButton
                     android:id="@+id/buttonExpandArrow"
@@ -453,7 +475,7 @@
                     android:layout_height="22dp"
                     android:layout_gravity="center_vertical"
                     android:adjustViewBounds="false"
-                    android:background="@android:color/transparent"
+                    android:background="@color/orange"
                     android:baselineAlignBottom="false"
                     android:cropToPadding="false"
                     android:src="@drawable/baseline_keyboard_arrow_up_black_36" />
@@ -476,7 +498,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginStart="8dp"
                             android:layout_weight="100"
-                            android:text="@string/DateLabel" />
+                            android:text="@string/DateLabel"
+                            android:textColor="@android:color/white"/>
 
                         <EditText
                             android:id="@+id/editDate"
@@ -485,7 +508,8 @@
                             android:layout_gravity="start"
                             android:ems="9"
                             android:inputType="none|date"
-                            android:maxLines="1" />
+                            android:maxLines="1"
+                            android:textColor="@android:color/white"/>
 
                     </LinearLayout>
 
@@ -501,7 +525,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginStart="8dp"
                             android:layout_weight="100"
-                            android:text="@string/activate_rest_time" />
+                            android:text="@string/activate_rest_time"
+                            android:textColor="@android:color/white"/>
 
                         <CheckBox
                             android:id="@+id/restTimecheckBox"
@@ -518,7 +543,8 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginStart="8dp"
                             android:layout_weight="100"
-                            android:text="@string/rest_time" />
+                            android:text="@string/rest_time"
+                            android:textColor="@android:color/white"/>
 
                         <EditText
                             android:id="@+id/editRestTime"
@@ -527,7 +553,8 @@
                             android:layout_marginEnd="8dp"
                             android:ems="4"
                             android:inputType="none|number"
-                            android:text="60" />
+                            android:text="60"
+                            android:textColor="@android:color/white"/>
 
                     </LinearLayout>
 
@@ -545,7 +572,8 @@
                             android:layout_gravity="start"
                             android:layout_marginStart="8dp"
                             android:gravity="start"
-                            android:text="@string/NotesLabel" />
+                            android:text="@string/NotesLabel"
+                            android:textColor="@android:color/white"/>
 
                         <EditText
                             android:id="@+id/editFonteNote"
@@ -555,6 +583,8 @@
                             android:height="40dp"
                             android:ems="10"
                             android:hint="@string/NotesLabel"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"
                             android:inputType="textMultiLine"
                             android:lines="3"
                             android:maxLines="5"
@@ -584,7 +614,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginStart="3dp"
-                android:text="@string/TopTenLabel" />
+                android:text="@string/TopTenLabel"
+                android:textColor="@android:color/white"/>
 
         </LinearLayout>
 

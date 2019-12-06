@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tab_machine_details"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_80">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -31,7 +32,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:background="@color/background_even"
                 android:cropToPadding="false"
                 android:maxHeight="200dp"
                 android:minHeight="60dp"
@@ -63,9 +63,10 @@
                             android:id="@+id/bodyBuildingSelection"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/background_odd"
+                            android:background="@color/orange"
                             android:gravity="center"
-                            android:text="@string/FonteLabel" />
+                            android:text="@string/FonteLabel"
+                            android:textColor="@android:color/black"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -73,14 +74,16 @@
                         style="@style/CardViewStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="40">
+                        android:layout_weight="40"
+                        android:background="@color/orange">
 
                         <TextView
                             android:id="@+id/cardioSelection"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="@string/CardioLabel" />
+                            android:text="@string/CardioLabel"
+                            android:textColor="@android:color/black"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -92,6 +95,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:text="@string/name"
+                    android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
                 <EditText
@@ -103,6 +107,7 @@
                     android:lines="1"
                     android:maxLines="1"
                     android:text="Machine Name"
+                    android:textColor="@android:color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -111,6 +116,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:text="@string/description"
+                    android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
                 <EditText
@@ -118,6 +124,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Description"
+                    android:textColor="@android:color/white"
                     android:textSize="14sp" />
 
                 <TextView
@@ -126,6 +133,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:text="@string/muscles"
+                    android:textColor="@android:color/white"
                     android:textSize="12sp" />
 
                 <TextView
@@ -136,6 +144,7 @@
                     android:inputType="none"
                     android:background="?attr/editTextBackground"
                     android:text=""
+                    android:textColor="@android:color/white"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -152,7 +161,7 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@android:drawable/ic_menu_camera"
-        app:backgroundTint="@color/launcher_background"
+        app:backgroundTint="@color/orange"
         app:layout_anchor="@id/machine_photo"
         app:layout_anchorGravity="bottom|right|end" />
 

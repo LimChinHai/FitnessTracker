@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tab_machine_details"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/orange">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -64,7 +65,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="6dip">
+                android:padding="6dip"
+                android:background="@android:color/background_light">
 
                 <com.easyfitness.utils.EditableInputView.EditableInputView
                     android:id="@+id/name"
@@ -77,7 +79,7 @@
                     android:lines="1"
                     android:maxLines="1"
                     android:textSize="24sp"
-                    tools:text="Profile Name" />
+                    tools:text="Profile Name"/>
 
                 <com.easyfitness.utils.EditableInputView.EditableInputView
                     android:id="@+id/gender"
@@ -125,7 +127,7 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@android:drawable/ic_menu_camera"
-        app:backgroundTint="@color/launcher_background"
+        app:backgroundTint="@color/background"
         app:layout_anchor="@id/photo"
         app:layout_anchorGravity="bottom|right|end" />
 

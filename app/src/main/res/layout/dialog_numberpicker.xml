@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/cardview_light_background"
+    android:background="@color/material_blue_grey_80"
     android:orientation="vertical">
 
     <LinearLayout
@@ -25,9 +25,9 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="+0.25"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold" />
 
             <Button
@@ -36,9 +36,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="+0.5"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -48,9 +48,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="+1"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -60,9 +60,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="+5"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -72,9 +72,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="+10"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -95,7 +95,8 @@
                 android:ems="3"
                 android:gravity="center"
                 android:inputType="phone"
-                android:maxEms="5" />
+                android:maxEms="5"
+                android:textColor="@color/background"/>
 
         </LinearLayout>
 
@@ -113,9 +114,9 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="-0.25"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -125,9 +126,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="-0.5"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -137,9 +138,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="-1"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -149,9 +150,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="-5"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -161,9 +162,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/sweet_dialog_bg_color"
                 android:text="-10"
-                android:textColor="@color/background"
+                android:textColor="@color/material_blue_grey_80"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -176,7 +177,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#3E80B4"
+        android:background="@color/orange"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="1">
@@ -191,7 +192,7 @@
             android:clickable="true"
             android:focusable="true"
             android:text="@string/global_cancel"
-            android:textColor="@color/background"
+            android:textColor="@color/material_blue_grey_80"
             android:textStyle="bold" />
 
         <Button
@@ -204,7 +205,7 @@
             android:clickable="true"
             android:focusable="true"
             android:text="@string/global_ok"
-            android:textColor="@color/background"
+            android:textColor="@color/material_blue_grey_80"
             android:textStyle="bold" />
 
     </LinearLayout>

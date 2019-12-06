@@ -5,19 +5,19 @@
     android:layout_height="match_parent"
     android:layout_gravity="top"
     android:gravity="top"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_80">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/bodyTrackingDetailsToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/toolbar_background"
+        android:background="@color/orange"
         android:elevation="4dp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EEEEEE"
         android:fillViewport="true"
         android:orientation="vertical"
         android:paddingLeft="0dp"
@@ -41,7 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp">
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/material_blue_grey_80">
 
                     <Button
                         android:id="@+id/buttonAddWeight"
@@ -54,9 +55,10 @@
                         android:layout_marginTop="1dp"
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="1dp"
-                        android:background="@drawable/round_button"
+                        android:background="@color/background"
                         android:gravity="center_vertical|center"
                         android:text="+"
+                        android:textColor="@color/material_blue_grey_80"
                         android:textSize="24sp" />
 
                     <LinearLayout
@@ -72,7 +74,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="40"
-                            android:text="@string/DateLabel" />
+                            android:text="@string/DateLabel"
+                            android:textColor="@color/background"/>
 
                         <EditText
                             android:id="@+id/profilEditDate"
@@ -99,7 +102,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="40"
-                            android:text="@string/measureLabel" />
+                            android:text="@string/measureLabel"
+                            android:textColor="@color/background"/>
 
                         <LinearLayout
                             android:layout_width="fill_parent"
@@ -113,6 +117,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="10"
                                 android:hint="@string/MesureHint"
+                                android:textColorHint="@color/background"
                                 android:inputType="numberDecimal" />
 
                             <!--com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -147,7 +152,7 @@
                     android:layout_height="300dip"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
-                    android:background="#FFFFFF" />
+                    android:background="@color/material_blue_grey_80" />
 
             </androidx.cardview.widget.CardView>
 
@@ -155,7 +160,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="@string/sizeTableLabel" />
+                android:text="@string/sizeTableLabel"
+                android:textColor="@color/background"/>
 
             <include layout="@layout/bodymeasure_rowheader" />
 

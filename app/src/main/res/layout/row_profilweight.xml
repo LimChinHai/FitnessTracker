@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_80">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CARDVIEW"
@@ -22,7 +23,8 @@
             android:paddingLeft="5dp"
             android:paddingTop="4dp"
             android:paddingRight="5dp"
-            android:paddingBottom="4dp">
+            android:paddingBottom="4dp"
+            android:background="@color/material_blue_grey_80">
 
             <TextView
                 android:id="@+id/DATE_CELL"
@@ -32,6 +34,7 @@
                 android:layout_weight="50"
                 android:gravity="center_vertical"
                 android:text="12/34/2016"
+                android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
             <TextView
@@ -44,6 +47,7 @@
                 android:layout_weight="50"
                 android:gravity="center|start"
                 android:text="00kg"
+                android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
             <ImageView

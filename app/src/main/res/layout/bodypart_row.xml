@@ -3,13 +3,15 @@
     android:layout_width="fill_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:orientation="horizontal"
-    android:padding="6dip">
+    android:padding="6dip"
+    android:background="@color/material_blue_grey_80">
 
     <TextView
         android:id="@+id/LIST_BODYPART_ID"
         android:layout_width="fill_parent"
         android:layout_height="26dip"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:textColor="@color/background"/>
 
     <ImageView
         android:id="@+id/LIST_BODYPART_LOGO"
@@ -27,6 +29,7 @@
         android:layout_weight="50"
         android:gravity="center_vertical"
         android:text="Example Body Part"
+        android:textColor="@color/background"
         android:textSize="16sp" />
 
     <LinearLayout
@@ -41,6 +44,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/lastRecordLabel"
+            android:textColor="@color/background"
             android:textSize="10sp" />
 
         <TextView
@@ -49,6 +53,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="50 cm"
+            android:textColor="@color/background"
             android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>

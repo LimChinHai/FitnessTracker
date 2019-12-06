@@ -5,7 +5,8 @@
     android:id="@+id/ROWFONTELAYOUT"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_80">
 
     <TextView
         android:id="@+id/SEPARATOR_CELL"
@@ -20,7 +21,7 @@
         android:maxLines="1"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
-        android:textColor="@color/gray"
+        android:textColor="@android:color/white"
         android:textSize="12sp"
         android:textStyle="bold|italic"
         android:visibility="gone"
@@ -42,7 +43,8 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingTop="2dp"
-            android:paddingBottom="2dp">
+            android:paddingBottom="2dp"
+            android:background="@color/material_blue_grey_80">
 
             <LinearLayout
                 android:layout_width="0dip"
@@ -65,7 +67,7 @@
                     android:paddingTop="0dp"
                     android:paddingBottom="0dp"
                     android:text="Machine"
-                    android:textColor="@color/gray"
+                    android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:autoSizeMaxTextSize="16sp"
@@ -87,6 +89,7 @@
                         android:layout_marginBottom="0dp"
                         android:paddingTop="0dp"
                         tool:text="12/34/2016"
+                        android:textColor="@android:color/white"
                         android:textSize="10sp" />
 
                     <TextView
@@ -97,6 +100,7 @@
                         android:layout_marginStart="5dp"
                         android:paddingTop="0dp"
                         android:text="00:00:00"
+                        android:textColor="@android:color/white"
                         android:textSize="10sp" />
 
                 </LinearLayout>
@@ -122,7 +126,7 @@
                     android:gravity="center"
                     android:maxLines="1"
                     android:text="@string/SerieLabel"
-                    android:textColor="@color/gray"
+                    android:textColor="@android:color/white"
                     android:textSize="10sp"
                     android:textStyle="bold" />
 
@@ -136,7 +140,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:maxLines="1"
-                    android:text="1" />
+                    android:text="1"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
@@ -159,7 +164,7 @@
                     android:gravity="center"
                     android:maxLines="1"
                     android:text="@string/RepetitionLabel_short"
-                    android:textColor="@color/gray"
+                    android:textColor="@android:color/white"
                     android:textSize="10sp"
                     android:textStyle="bold" />
 
@@ -174,6 +179,7 @@
                     android:gravity="center"
                     android:maxLines="1"
                     android:text="2"
+                    android:textColor="@android:color/white"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -196,7 +202,7 @@
                     android:gravity="center"
                     android:maxLines="1"
                     android:text="@string/PoidsLabel"
-                    android:textColor="@color/gray"
+                    android:textColor="@android:color/white"
                     android:textSize="10sp"
                     android:textStyle="bold" />
 
@@ -211,6 +217,7 @@
                     android:gravity="center"
                     android:maxLines="1"
                     android:text="3Lbs"
+                    android:textColor="@android:color/white"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -226,6 +233,7 @@
                 android:elevation="0dp"
                 android:focusable="true"
                 android:rotation="+90"
+                android:background="@android:color/white"
                 app:srcCompat="?attr/actionModeCloseDrawable" />
 
             <ImageView

@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_80">
 
     <!-- The main content view -->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/material_blue_grey_80"
         android:focusableInTouchMode="true"
         android:orientation="vertical"
         android:paddingLeft="0dp"
@@ -22,7 +22,7 @@
             android:id="@+id/actionToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/material_blue_grey_95"
+            android:background="@color/orange"
             android:elevation="4dp"
             android:minHeight="?attr/actionBarSize"
             android:visibility="visible">
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_margin="0dp"
-            android:background="@color/material_blue_grey_80"
+            android:background="@color/orange"
             android:elevation="4dp"
             android:minHeight="?attr/actionBarSize"
             android:padding="0dp"
@@ -209,7 +209,7 @@
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#111"
+        android:background="#1B111111"
         android:choiceMode="none"
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp" />

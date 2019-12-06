@@ -4,7 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_80">
 
     <LinearLayout
         android:id="@+id/spinnerLayout"
@@ -26,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:background="@color/toolbar_background"
+        android:background="@color/orange"
         android:minHeight="50dp"
         android:orientation="vertical">
 
@@ -83,7 +84,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#fff" />
+            android:textColor="@color/background" />
 
     </RelativeLayout>
 

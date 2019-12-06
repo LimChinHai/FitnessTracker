@@ -1,13 +1,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_80">
 
     <LinearLayout
         android:id="@+id/tab_cardio"
         android:name="tab_cardio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#EEEEEE"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="vertical"
@@ -20,7 +20,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
-            android:background="@color/red"
+            android:background="@color/orange"
             android:singleLine="false"
             android:text="@string/obsoleteCardioTab" />
 
@@ -32,7 +32,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/material_blue_grey_80">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -45,7 +46,8 @@
                         android:layout_marginStart="8dp"
                         android:layout_weight="40"
                         android:singleLine="true"
-                        android:text="@string/DateLabel" />
+                        android:text="@string/DateLabel"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editCardioDate"
@@ -53,7 +55,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="10"
                         android:inputType="none|date"
-                        android:nextFocusDown="@+id/editMachine" />
+                        android:nextFocusDown="@+id/editMachine"
+                        android:textColor="@android:color/white"/>
 
                 </LinearLayout>
 
@@ -68,7 +71,8 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
                         android:layout_weight="40"
-                        android:text="@string/ExerciceLabel" />
+                        android:text="@string/ExerciceLabel"
+                        android:textColor="@android:color/white"/>
 
                     <LinearLayout
                         android:layout_width="fill_parent"
@@ -83,7 +87,8 @@
                             android:layout_weight="45"
                             android:imeOptions="actionNext"
                             android:inputType="text|textAutoComplete"
-                            android:nextFocusForward="@+id/editSerie" />
+                            android:nextFocusForward="@+id/editSerie"
+                            android:textColor="@android:color/white"/>
 
                         <ImageButton
                             android:id="@+id/buttonListExercice"
@@ -94,7 +99,7 @@
                             android:layout_marginRight="7dp"
                             android:layout_weight="5"
                             android:adjustViewBounds="false"
-                            android:background="@android:color/transparent"
+                            android:background="@android:color/white"
                             android:baselineAlignBottom="false"
                             android:cropToPadding="false"
                             android:src="@drawable/list" />
@@ -120,14 +125,16 @@
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/material_blue_grey_80">
 
                     <TextView
                         android:id="@+id/textDistance"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/DistanceLabel" />
+                        android:text="@string/DistanceLabel"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editDistance"
@@ -135,7 +142,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:inputType="numberDecimal"
-                        android:nextFocusDown="@+id/editDuration" />
+                        android:nextFocusDown="@+id/editDuration"
+                        android:textColor="@android:color/white"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -149,14 +157,16 @@
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/material_blue_grey_80">
 
                     <TextView
                         android:id="@+id/textDuration"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="@string/DurationLabel" />
+                        android:text="@string/DurationLabel"
+                        android:textColor="@android:color/white"/>
 
                     <EditText
                         android:id="@+id/editDuration"
@@ -164,7 +174,8 @@
                         android:layout_height="wrap_content"
                         android:ems="5"
                         android:gravity="center"
-                        android:inputType="time">
+                        android:inputType="time"
+                        android:textColor="@android:color/white">
 
                     </EditText>
                 </LinearLayout>
@@ -206,7 +217,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="40"
-                android:background="@android:color/white"
+                android:background="@color/orange"
                 android:text="@string/AddLabel" />
         </LinearLayout>
 

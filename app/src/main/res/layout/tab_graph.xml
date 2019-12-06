@@ -4,12 +4,12 @@
     android:name="tab_graph"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/material_blue_grey_80">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#EEEEEE"
         android:isScrollContainer="true"
         android:orientation="vertical"
         android:paddingLeft="0dp"
@@ -21,7 +21,8 @@
             style="@style/CardViewStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="5dp">
+            app:cardCornerRadius="5dp"
+            android:background="@color/material_blue_grey_80">
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -29,7 +30,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:stretchColumns="1">
+                android:stretchColumns="1"
+                android:background="@color/material_blue_grey_80">
 
                 <TableRow android:gravity="center_vertical">
 
@@ -37,7 +39,8 @@
                         android:id="@+id/textviewGraphMachine"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/MachineLabel" />
+                        android:text="@string/MachineLabel"
+                        android:textColor="@android:color/white"/>
 
                     <Spinner
                         android:id="@+id/filterGraphMachine"
@@ -53,7 +56,8 @@
                         android:id="@+id/textviewGraphFunction"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/FunctionLabel" />
+                        android:text="@string/FunctionLabel"
+                        android:textColor="@android:color/white"/>
 
                     <Spinner
                         android:id="@+id/filterGraphFunction"
@@ -71,7 +75,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/material_blue_grey_80">
 
             <Button
                 android:id="@+id/allbutton"
@@ -83,8 +88,9 @@
                 android:layout_marginRight="3dip"
                 android:layout_marginBottom="0dip"
                 android:layout_weight="40"
-                android:background="@android:color/white"
+                android:background="@color/orange"
                 android:text="@string/graph_all"
+                android:textColor="@color/material_blue_grey_80"
                 android:textSize="12sp" />
 
             <Button
@@ -97,8 +103,9 @@
                 android:layout_marginRight="3dip"
                 android:layout_marginBottom="0dip"
                 android:layout_weight="40"
-                android:background="@android:color/white"
+                android:background="@color/orange"
                 android:text="@string/graph_lastyear"
+                android:textColor="@color/material_blue_grey_80"
                 android:textSize="12sp" />
 
             <Button
@@ -111,8 +118,9 @@
                 android:layout_marginRight="3dip"
                 android:layout_marginBottom="0dip"
                 android:layout_weight="40"
-                android:background="@android:color/white"
+                android:background="@color/orange"
                 android:text="@string/graph_lastmonth"
+                android:textColor="@color/material_blue_grey_80"
                 android:textSize="12sp" />
 
             <Button
@@ -125,8 +133,9 @@
                 android:layout_marginRight="3dip"
                 android:layout_marginBottom="0dip"
                 android:layout_weight="40"
-                android:background="@android:color/white"
+                android:background="@color/orange"
                 android:text="@string/graph_lastweek"
+                android:textColor="@color/material_blue_grey_80"
                 android:textSize="12sp" />
 
         </LinearLayout>
@@ -147,7 +156,7 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#FFFFFF"
+                android:background="@color/material_blue_grey_80"
                 android:minHeight="150dp" />
 
             <com.github.mikephil.charting.charts.BarChart
@@ -159,7 +168,7 @@
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#FFFFFF"
+                android:background="@color/material_blue_grey_80"
                 android:minHeight="150dp"
                 android:visibility="gone"/>
 
